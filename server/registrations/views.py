@@ -18,8 +18,8 @@ def register_webinar(request):
             # Email sending logic here after form is saved
             send_mail(
                 subject='Webinar Registration Confirmation',
-                message=f'Thank you for registering for the webinar: {registration.webinar.title}',
-                from_email='your-email@example.com',  # Replace with your email
+                message='Thank you for registering for the webinar: {registration.webinar.title}',
+                from_email='mohammedsalman1923@gmail.com',  
                 recipient_list=[registration.email],  # Send email to registered user
                 fail_silently=False,
             )
